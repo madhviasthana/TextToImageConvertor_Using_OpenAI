@@ -1,0 +1,19 @@
+{
+  "name": "Backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index"
+  },
+  "dependencies": {
+    "cloudinary": "^2.5.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.2",
+    "nodemon": "^3.1.7",
+    "openai": "^4.68.4"
+  }
+}
