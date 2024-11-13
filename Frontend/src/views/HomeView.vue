@@ -89,7 +89,7 @@ const title=ref('')
 const fetchPosts = async () => {
   try {
     loading.value = true;
-    const response = await fetch('http://texttoimageapi.themadhvi.com/api/v1/post', {
+    const response = await fetch('https://texttoimageapi.themadhvi.com/api/v1/post', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
