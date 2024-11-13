@@ -94,7 +94,7 @@ const generateImage = async () => {
       generatingImg.value = true;
       form.photo = null; // Clear any existing image
 
-      const response = await fetch('http://texttoimage.themadhvi.com/api/v1/dalle', {
+      const response = await fetch('http://texttoimageapi.themadhvi.com/api/v1/dalle', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
