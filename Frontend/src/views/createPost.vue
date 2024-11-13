@@ -124,7 +124,7 @@ const handleSubmit = async () => {
     try {
       loading.value = true;
 
-      const response = await fetch('https://texttoimage.themadhvi.com/api/v1/post', {
+      const response = await fetch('https://texttoimageapi.themadhvi.com/api/v1/post', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
