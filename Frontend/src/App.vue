@@ -30,68 +30,69 @@ html, body, #app {
   height: 100%;
   background-color: #ffffff;
   font-family: "Arial", sans-serif;
-  color: #E0E0E0; /* Light gray for improved readability */
+  color: #333333; /* Darker gray for better readability */
 }
 
-/* Header Styling */
 /* Header Styling */
 .app-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Ensures vertical alignment */
-  padding: 10px 40px; /* Adjust padding to control overall height */
+  display: flex; /* Flexbox for horizontal alignment */
+  justify-content: space-between; /* Align logo to the left and button to the right */
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px; /* Add some padding for spacing */
   background-color: #ffffff;
-  height: 80px; /* Limit the total height of the header */
-  box-sizing: border-box; /* Ensure padding doesn’t increase height */
+  box-sizing: border-box; /* Ensure padding doesn't add to size */
+  height: 80px; /* Set a consistent height for the header */
 }
 
-
-
+/* Logo Styling */
 .logo {
-  height:85px; /* Increase the logo size slightly */
+  max-height: 60px; /* Limit logo size */
   width: auto; /* Maintain aspect ratio */
-  display: inline-block; /* Ensures proper alignment */
-  max-height: 100%; /* Prevents the logo from exceeding the header height */
 }
 
-
-
-/* Consolidated Link Styling */
-.app-header .link {
+/* Button Styling */
+.link {
+  display: inline-block; /* Keep the button inline */
   color: #ffffff !important; /* Ensure white text */
-  background-color: #6BC679 !important; /* Ensure green background */
+  background-color: #6BC679 !important; /* Green background */
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
   padding: 10px 20px;
   border: 2px solid #6BC679;
   border-radius: 8px;
+  text-align: center; /* Center-align the text inside the button */
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-.app-header .link:hover,
-.app-header .link:focus,
-.app-header .link:active {
+.link:hover,
+.link:focus,
+.link:active {
   background-color: #5aa566 !important; /* Darker green for hover/focus/active */
   color: #ffffff !important; /* Ensure white text */
   border-color: #5aa566 !important;
 }
 
-
-
+/* Main Section */
+.app-main {
+  padding: 20px;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .app-header {
-    flex-direction: column;
-    padding: 10px 20px;
+    flex-direction: row; /* Ensure items are in a row */
+    justify-content: space-between; /* Keep the logo on the left and the button on the right */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .logo {
+    max-height: 50px; /* Scale down logo for smaller screens */
   }
 
   .link {
-    margin-top: 10px;
+    font-size: 0.9rem; /* Adjust button text size for smaller screens */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
   }
 }
-
-
-
 </style>
